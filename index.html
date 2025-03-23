@@ -3,16 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site GitHub Pages</title>
-    <link rel="stylesheet" href="style.css">
+    <title>AutoTopClean - Nettoyage Voiture</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e3f2fd;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, #1976d2, #64b5f6);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .header-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            opacity: 0.9;
+        }
+        section {
+            padding: 50px 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 8px;
+        }
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #1976d2;
+            color: white;
+        }
+        .gallery img {
+            width: 45%;
+            margin: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #1976d2;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon site !</h1>
+        <div class="logo">AutoTopClean</div>
+        <img src="header-image.jpg" alt="Nettoyage Voiture" class="header-image">
     </header>
-    <p>Ceci est un site hébergé gratuitement avec GitHub Pages.</p>
-    <button onclick="afficherMessage()">Clique-moi</button>
+    
+    <section class="prestations">
+        <h2>Nos Prestations & Tarifs</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Prix</th>
+            </tr>
+            <tr>
+                <td>Nettoyage intérieur</td>
+                <td>50€</td>
+            </tr>
+            <tr>
+                <td>Nettoyage extérieur</td>
+                <td>40€</td>
+            </tr>
+            <tr>
+                <td>Nettoyage complet</td>
+                <td>80€</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section class="about">
+        <h2>À propos de nous</h2>
+        <p>AutoTopClean est spécialisé dans le nettoyage professionnel des véhicules avec des produits écologiques et des équipements de pointe.</p>
+    </section>
+    
+    <section class="gallery">
+        <h2>Nos Réalisations & Avis Clients</h2>
+        <div class="images">
+            <img src="car1.jpg" alt="Voiture nettoyée">
+            <img src="car2.jpg" alt="Intérieur impeccable">
+        </div>
+        <div class="avis">
+            <p>⭐⭐⭐⭐⭐ - "Service impeccable, ma voiture est comme neuve !"</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>📍 Adresse : [Ton adresse]</p>
+        <p>📧 Email : contact@autotopclean.ch</p>
+        <p>📞 Téléphone : +41 00 000 00 00</p>
+    </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.3 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>
