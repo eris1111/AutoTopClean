@@ -11346,6 +11346,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .pricing-item h3 {
     margin-bottom: 10px;
     font-size: 20px;
+    text-align: center; /* Centre uniquement le titre */
 }
 
 .pricing-item p {
@@ -11366,7 +11367,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .pricing-item ul {
-    text-align: left; /* Aligne le texte à gauche */
-    padding-left: 20px; /* Ajoute un léger retrait */
+    text-align: left; /* Aligne le texte des listes à gauche */
+    list-style-position: inside; /* Garde les puces visibles */
+    padding-left: 0; /* Enlève le retrait par défaut */
     margin: 10px 0; /* Ajoute un peu d'espace autour */
 }
