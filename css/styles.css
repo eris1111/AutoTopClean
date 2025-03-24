@@ -11372,3 +11372,15 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-left: 0; /* Enlève le retrait par défaut */
     margin: 10px 0; /* Ajoute un peu d'espace autour */
 }
+
+.table-container table {
+    width: 80%; /* Ajuste la largeur du tableau */
+    max-width: 900px; /* Limite la taille max pour éviter qu'il soit trop grand */
+    border-collapse: collapse; /* Évite les doubles bordures */
+}
+
+.table-container th, 
+.table-container td {
+    padding: 12px; /* Ajoute de l’espace pour plus de lisibilité */
+    text-align: center; /* Centre le texte */
+}
