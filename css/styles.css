@@ -11331,7 +11331,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     width: 250px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+    cursor: default;
 }
 
 .pricing-item:hover {
