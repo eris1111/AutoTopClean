@@ -11374,7 +11374,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .table-container table {
-    width: 70%; /* Ajuste la largeur du tableau */
+    width: 50%; /* Ajuste la largeur du tableau */
     max-width: 900px; /* Limite la taille max pour éviter qu'il soit trop grand */
     border-collapse: collapse; /* Évite les doubles bordures */
 }
