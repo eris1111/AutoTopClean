@@ -11354,3 +11354,9 @@ section#contact form#contactForm :-ms-input-placeholder {
     font-weight: bold;
     margin-top: 10px;
 }
+
+.table-container {
+    display: flex;
+    justify-content: center; /* Centre le tableau horizontalement */
+    margin-top: 20px; /* Ajoute un espace au-dessus si besoin */
+}
