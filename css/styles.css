@@ -11360,3 +11360,9 @@ section#contact form#contactForm :-ms-input-placeholder {
     justify-content: center; /* Centre le tableau horizontalement */
     margin-top: 100px; /* Ajoute un espace au-dessus si besoin */
 }
+
+.pricing-item ul {
+    text-align: left; /* Aligne le texte à gauche */
+    padding-left: 20px; /* Ajoute un léger retrait */
+    margin: 10px 0; /* Ajoute un peu d'espace autour */
+}
