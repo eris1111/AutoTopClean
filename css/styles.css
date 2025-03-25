@@ -11457,7 +11457,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 /* Media query pour les écrans plus petits (mobile) */
 @media (max-width: 768px) {
     .image-container img {
-        max-width: 100%; /* Augmente la largeur sur mobile */
-        max-height: 100%; /* Augmente la hauteur sur mobile */
+        max-width: 80%; /* Augmente la largeur sur mobile */
+        max-height: 80%; /* Augmente la hauteur sur mobile */
     }
 }
