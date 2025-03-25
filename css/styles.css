@@ -11405,7 +11405,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .image-card img {
-    width: 100%; /* Remplit la largeur du conteneur */
+    width: 200px; /* Largeur fixe */
     height: 200px; /* Hauteur fixe */
     object-fit: cover; /* Recadrage pour conserver un bon rendu */
     border-radius: 8px;
