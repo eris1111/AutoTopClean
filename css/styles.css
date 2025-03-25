@@ -11441,3 +11441,16 @@ section#contact form#contactForm :-ms-input-placeholder {
         max-height: 400px; /* Garde une hauteur max */
     }
 }
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    height: 100vh; /* Utilise toute la hauteur de la fenêtre */
+    margin: 0; /* Enlève les marges par défaut */
+}
+
+.image-container img {
+    max-width: 100%; /* Limite la largeur de l'image */
+    max-height: 100%; /* Limite la hauteur de l'image */
+}
