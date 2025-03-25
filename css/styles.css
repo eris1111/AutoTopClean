@@ -11453,3 +11453,11 @@ section#contact form#contactForm :-ms-input-placeholder {
     max-width: 50%; /* Limite la largeur de l'image */
     max-height: 50%; /* Limite la hauteur de l'image */
 }
+
+/* Media query pour les écrans plus petits (mobile) */
+@media (max-width: 768px) {
+    .image-container img {
+        max-width: 80%; /* Augmente la largeur sur mobile */
+        max-height: 80%; /* Augmente la hauteur sur mobile */
+    }
+}
