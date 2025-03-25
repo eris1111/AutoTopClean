@@ -11450,8 +11450,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .image-container img {
-    max-width: 50%; /* Limite la largeur de l'image */
-    max-height: 50%; /* Limite la hauteur de l'image */
+    max-width: 40%; /* Limite la largeur de l'image */
+    max-height: 40%; /* Limite la hauteur de l'image */
 }
 
 /* Media query pour les écrans plus petits (mobile) */
