@@ -11373,16 +11373,22 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin: 10px 0; /* Ajoute un peu d'espace autour */
 }
 
+.table-container {
+    display: flex;
+    justify-content: center; /* Centre le tableau horizontalement */
+    margin-top: 20px; /* Marge au-dessus du tableau */
+}
+
 .table-container table {
-    width: 50%; /* Ajuste la largeur du tableau */
-    max-width: 900px; /* Limite la taille max pour éviter qu'il soit trop grand */
+    width: 100%; /* Utilise toute la largeur disponible */
+    max-width: 900px; /* Limite la taille du tableau à 900px */
     border-collapse: collapse; /* Évite les doubles bordures */
 }
 
 .table-container th, 
 .table-container td {
     padding: 12px; /* Ajoute de l’espace pour plus de lisibilité */
-    text-align: center; /* Centre le texte */
+    text-align: center; /* Centre le texte par défaut */
 }
 
 .table-container td:first-child {
