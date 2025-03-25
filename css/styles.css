@@ -11391,8 +11391,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
-    gap: 20px; /* Espacement entre les éléments */
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales sur grand écran */
+    gap: 20px;
     text-align: center;
     margin-top: 20px;
 }
@@ -11405,9 +11405,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .image-card img {
-    width: 400px; /* Largeur fixe */
-    height: 400px; /* Hauteur fixe */
-    object-fit: cover; /* Recadrage pour conserver un bon rendu */
+    width: 100%; /* Adapte la largeur à la grille */
+    max-width: 400px; /* Empêche les images de devenir trop grandes */
+    height: 400px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -11420,4 +11421,17 @@ section#contact form#contactForm :-ms-input-placeholder {
 .image-card p {
     font-size: 14px;
     color: #555;
+}
+
+/* MEDIA QUERY POUR MOBILE */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    }
+
+    .image-card img {
+        width: 100%; /* Les images prennent toute la largeur du conteneur */
+        height: auto; /* Hauteur ajustée pour éviter la déformation */
+        max-height: 400px; /* Garde une hauteur max */
+    }
 }
