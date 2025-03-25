@@ -11451,6 +11451,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .image-container img {
-    max-width: 100%; /* Limite la largeur de l'image */
-    max-height: 100%; /* Limite la hauteur de l'image */
+    max-width: 50%; /* Limite la largeur de l'image */
+    max-height: 50%; /* Limite la hauteur de l'image */
 }
