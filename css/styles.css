@@ -10851,7 +10851,7 @@ p {
   font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
-  max-width: 800px; /* Limite la largeur */
+  max-width: 1200px; /* Limite la largeur */
   margin-left: auto; /* Centre le texte */
   margin-right: auto; /* Centre le texte */
   text-align: center; /* Assure l'alignement centré */
