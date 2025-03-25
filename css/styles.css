@@ -11389,35 +11389,35 @@ section#contact form#contactForm :-ms-input-placeholder {
     text-align: left; /* Aligne à gauche uniquement la première colonne */
 }
 
-.image-table {
+.image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
     gap: 20px; /* Espacement entre les éléments */
     text-align: center;
     margin-top: 20px;
 }
 
-.image-item {
-    background: #f8f9fa;
+.image-card {
+    background-color: #f8f9fa;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.image-item img {
-    width: 100%; /* Prend toute la largeur du parent */
-    height: 200px; /* Taille fixe carrée */
-    object-fit: cover; /* Recadre l’image pour remplir */
+.image-card img {
+    width: 100%; /* Remplit la largeur du conteneur */
+    height: 200px; /* Hauteur fixe */
+    object-fit: cover; /* Recadrage pour conserver un bon rendu */
     border-radius: 8px;
 }
 
-.image-item h3 {
+.image-card h3 {
     margin-top: 10px;
     font-size: 18px;
     color: #007BFF;
 }
 
-.image-item p {
+.image-card p {
     font-size: 14px;
     color: #555;
 }
