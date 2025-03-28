@@ -11257,22 +11257,31 @@ input, textarea {
     background: #0056b3;
 }
 
-.footer {
-    background-color: #0d6efd; /* Fond bleu */
-    color: white;
+footer.footer {
+    background-color: #343a40; /* Dark background for footer */
 }
 
-.footer a {
+footer .btn-social {
+    background-color: #007bff; /* Social media button color */
     color: white;
-}
-
-.footer .btn-social {
-    font-size: 1.5rem;
-    padding: 10px;
-    background-color: #555; /* Couleur de fond des boutons */
+    padding: 8px;
     border-radius: 50%;
+    transition: background-color 0.3s;
 }
 
-.footer .btn-social:hover {
-    background-color: #007bff; /* Couleur de survol */
+footer .btn-social:hover {
+    background-color: #0056b3; /* Hover effect for social media buttons */
+}
+
+footer a {
+    color: white; /* Ensure all links in footer are white */
+    text-decoration: none;
+}
+
+footer .btn-social i {
+    font-size: 20px; /* Set size of icons */
+}
+
+footer .container {
+    max-width: 1200px; /* Limit the width of footer */
 }
