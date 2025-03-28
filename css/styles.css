@@ -11264,22 +11264,20 @@ footer.footer {
 footer .btn-social {
     background-color: #007bff; /* Social media button color */
     color: white;
-    padding: 8px;
+    padding: 12px; /* Augmente le padding pour des boutons plus grands */
     border-radius: 50%;
     transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .btn-social:hover {
     background-color: #0056b3; /* Hover effect for social media buttons */
 }
 
-footer a {
-    color: white; /* Ensure all links in footer are white */
-    text-decoration: none;
-}
-
 footer .btn-social i {
-    font-size: 20px; /* Set size of icons */
+    font-size: 24px; /* Augmente la taille des icônes */
 }
 
 footer .container {
