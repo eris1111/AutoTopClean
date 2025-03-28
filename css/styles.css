@@ -11201,7 +11201,7 @@ input, textarea {
 }
 
 button {
-    background: #007BFF;
+    background: #0d6efd;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -11217,7 +11217,7 @@ button:hover {
 }
 
 .footer {
-    background-color: #0d6efd; /* Fond sombre */
+    background-color: #0d6efd; /* Fond bleu */
     color: white;
 }
 
