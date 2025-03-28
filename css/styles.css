@@ -11258,12 +11258,12 @@ input, textarea {
     text-decoration: none; /* Enlève la décoration du lien */
 }
 
-.footer .btn-social {
-    font-size: 2rem; /* Augmente la taille des icônes */
-    padding: 15px; /* Augmente l'espacement à l'intérieur du bouton */
-    background-color: #007bff; /* Couleur de fond bleue par défaut */
-    border-radius: 50%; /* Assure que le bouton est rond */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Ajoute une transition fluide pour le hover */
+footer .footer .btn-social {
+    font-size: 2rem !important; /* Augmente la taille des icônes */
+    padding: 15px !important; /* Augmente l'espacement à l'intérieur du bouton */
+    background-color: #007bff !important; /* Couleur de fond bleue par défaut */
+    border-radius: 50% !important; /* Assure que le bouton est rond */
+    transition: background-color 0.3s ease, transform 0.3s ease !important; /* Ajoute une transition fluide pour le hover */
 }
 
 .footer .btn-social:hover {
