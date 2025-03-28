@@ -11241,7 +11241,7 @@ input, textarea {
     font-size: 16px;
 }
 
-button-contact {
+.button-submit {
     background: #0d6efd;
     color: white;
     padding: 10px 15px;
@@ -11253,7 +11253,7 @@ button-contact {
     width: 100%;
 }
 
-button:hover {
+.button-submit:hover {
     background: #0056b3;
 }
 
