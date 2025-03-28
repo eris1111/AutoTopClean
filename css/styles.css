@@ -11261,8 +11261,8 @@ footer.footer {
     background-color: #343a40; /* Dark background for footer */
 }
 
-footer .btn-social {
-    background-color: #007bff; /* Social media button color */
+.social-btn {
+    background-color: #007bff; /* Couleur des boutons sociaux */
     color: white;
     padding: 12px; /* Augmente le padding pour des boutons plus grands */
     border-radius: 50%;
@@ -11272,18 +11272,15 @@ footer .btn-social {
     justify-content: center;
 }
 
-footer .btn-social:hover {
-    background-color: #0056b3; /* Hover effect for social media buttons */
+.social-btn:hover {
+    background-color: #0056b3; /* Effet hover pour les boutons */
 }
 
-footer .btn-social i {
+.social-btn-icon {
     font-size: 24px; /* Augmente la taille des icônes */
 }
 
-footer .container {
-    max-width: 1200px; /* Limit the width of footer */
-}
-
+/* Mise en page mobile */
 @media (max-width: 767px) {
     footer .row {
         flex-direction: column; /* Aligne les éléments du footer verticalement sur mobile */
