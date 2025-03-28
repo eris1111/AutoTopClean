@@ -11283,3 +11283,28 @@ footer .btn-social i {
 footer .container {
     max-width: 1200px; /* Limit the width of footer */
 }
+
+@media (max-width: 767px) {
+    footer .row {
+        flex-direction: column; /* Aligne les éléments du footer verticalement sur mobile */
+        text-align: center; /* Centre le texte et les icônes */
+    }
+
+    footer .col-lg-4 {
+        margin-bottom: 15px; /* Espace entre les colonnes */
+    }
+
+    footer .col-lg-4.text-lg-start {
+        text-align: center; /* Centre les coordonnées sur mobile */
+    }
+
+    footer .col-lg-4.text-lg-start p {
+        margin-bottom: 5px; /* Espacement des paragraphes */
+    }
+
+    footer .col-lg-4.my-3.my-lg-0 {
+        display: flex;
+        justify-content: center; /* Centrer les icônes de réseaux sociaux sur mobile */
+        gap: 10px; /* Espacement entre les icônes */
+    }
+}
