@@ -11260,7 +11260,9 @@ input, textarea {
 
 footer .btn-social {
     font-size: 2rem; /* Augmente la taille des icônes */
-    padding: 15px; /* Augmente l'espacement à l'intérieur du bouton */
+    width: 60px; /* Taille fixe pour la largeur du bouton */
+    height: 60px; /* Taille fixe pour la hauteur du bouton */
+    padding: 0; /* Élimine le padding interne pour garantir une forme ronde parfaite */
     background-color: #007bff; /* Couleur de fond bleue par défaut */
     border-radius: 50%; /* Assure que le bouton est rond */
     display: inline-flex; /* Pour que les icônes soient bien alignées dans le bouton */
