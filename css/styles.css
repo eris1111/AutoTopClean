@@ -11258,6 +11258,12 @@ input, textarea {
     text-decoration: none; /* Enlève la décoration du lien */
 }
 
+footer .container {
+    display: flex; /* Utilisation de flexbox pour disposer les éléments */
+    justify-content: space-between; /* Espacement entre les colonnes */
+    align-items: center; /* Aligne les éléments verticalement au centre */
+}
+
 footer .btn-social {
     font-size: 2rem; /* Augmente la taille des icônes */
     width: 60px; /* Taille fixe pour la largeur du bouton */
@@ -11279,4 +11285,9 @@ footer .btn-social:hover {
 footer .btn-social i {
     font-size: 1.5rem; /* Taille des icônes à l'intérieur du bouton */
     color: white; /* Couleur des icônes */
+}
+
+footer .col-lg-4 {
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments de cette colonne à droite */
 }
