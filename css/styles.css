@@ -11264,12 +11264,14 @@ footer.footer {
 .social-btn {
     background-color: #007bff; /* Couleur des boutons sociaux */
     color: white;
-    padding: 12px; /* Augmente le padding pour des boutons plus grands */
-    border-radius: 50%;
+    padding: 15px; /* Augmenter l'espace à l'intérieur du bouton */
+    border-radius: 50%; /* S'assure que le bouton est rond */
     transition: background-color 0.3s;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 60px; /* Largeur du bouton */
+    height: 60px; /* Hauteur du bouton pour qu'il soit un cercle parfait */
 }
 
 .social-btn:hover {
@@ -11277,7 +11279,7 @@ footer.footer {
 }
 
 .social-btn-icon {
-    font-size: 24px; /* Augmente la taille des icônes */
+    font-size: 24px; /* Taille des icônes */
 }
 
 /* Mise en page mobile */
