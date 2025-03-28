@@ -11258,18 +11258,6 @@ input, textarea {
     text-decoration: none; /* Enlève la décoration du lien */
 }
 
-footer .container {
-    display: flex; /* Utilisation de flexbox pour disposer les éléments */
-    justify-content: space-between; /* Espacement entre les colonnes */
-    align-items: center; /* Aligne les éléments verticalement au centre */
-}
-
-footer .col-lg-4 {
-    display: flex;
-    justify-content: flex-start; /* Aligne les éléments de cette colonne à gauche */
-    flex-direction: column; /* Permet à chaque ligne (email, téléphone) d'être empilée */
-}
-
 footer .btn-social {
     font-size: 2rem; /* Augmente la taille des icônes */
     width: 60px; /* Taille fixe pour la largeur du bouton */
@@ -11280,7 +11268,6 @@ footer .btn-social {
     display: inline-flex; /* Pour que les icônes soient bien alignées dans le bouton */
     align-items: center;
     justify-content: center;
-    margin-left: 15px; /* Ajoute de l'espace entre les icônes */
     transition: background-color 0.3s ease, transform 0.3s ease; /* Ajoute une transition fluide pour le hover */
 }
 
@@ -11292,15 +11279,4 @@ footer .btn-social:hover {
 footer .btn-social i {
     font-size: 1.5rem; /* Taille des icônes à l'intérieur du bouton */
     color: white; /* Couleur des icônes */
-}
-
-/* Ajout d'un espacement suffisant pour les icônes des réseaux sociaux */
-footer .col-lg-4:last-child {
-    display: flex;
-    justify-content: flex-end; /* Aligne les icônes à droite */
-    align-items: center; /* Centrer verticalement les icônes */
-}
-
-footer .col-lg-4 a {
-    margin: 0 10px; /* Ajoute un espacement entre les icônes */
 }
