@@ -11262,30 +11262,31 @@ footer.footer {
 }
 
 .social-btn {
-    background-color: #007bff; /* Couleur des boutons sociaux */
+    background-color: #007bff; /* Couleur de fond des boutons */
     color: white;
-    padding: 15px; /* Augmenter l'espace à l'intérieur du bouton */
+    padding: 12px; /* Ajuste l'espace interne pour que ce ne soit pas trop grand */
     border-radius: 50%; /* S'assure que le bouton est rond */
     transition: background-color 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60px; /* Largeur du bouton */
-    height: 60px; /* Hauteur du bouton pour qu'il soit un cercle parfait */
+    width: 40px; /* Taille du bouton */
+    height: 40px; /* Hauteur du bouton */
+    margin: 0 10px; /* Espace entre les icônes */
 }
 
 .social-btn:hover {
-    background-color: #0056b3; /* Effet hover pour les boutons */
+    background-color: #0056b3; /* Couleur en survol */
 }
 
 .social-btn-icon {
-    font-size: 24px; /* Taille des icônes */
+    font-size: 20px; /* Taille de l'icône */
 }
 
 /* Mise en page mobile */
 @media (max-width: 767px) {
     footer .row {
-        flex-direction: column; /* Aligne les éléments du footer verticalement sur mobile */
+        flex-direction: column; /* Aligne les éléments verticalement */
         text-align: center; /* Centre le texte et les icônes */
     }
 
@@ -11303,7 +11304,7 @@ footer.footer {
 
     footer .col-lg-4.my-3.my-lg-0 {
         display: flex;
-        justify-content: center; /* Centrer les icônes de réseaux sociaux sur mobile */
-        gap: 10px; /* Espacement entre les icônes */
+        justify-content: center; /* Centre les icônes sur mobile */
+        gap: 15px; /* Espacement entre les icônes */
     }
 }
