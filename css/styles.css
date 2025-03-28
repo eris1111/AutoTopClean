@@ -11257,54 +11257,25 @@ input, textarea {
     background: #0056b3;
 }
 
-footer.footer {
-    background-color: #343a40; /* Dark background for footer */
-}
-
-.social-btn {
-    background-color: #007bff; /* Couleur de fond des boutons */
+.footer {
+    background-color: #333; /* Fond sombre */
     color: white;
-    padding: 12px; /* Ajuste l'espace interne pour que ce ne soit pas trop grand */
-    border-radius: 50%; /* S'assure que le bouton est rond */
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px; /* Taille du bouton */
-    height: 40px; /* Hauteur du bouton */
-    margin: 0 10px; /* Espace entre les icônes */
+    padding: 20px 0;
 }
 
-.social-btn:hover {
-    background-color: #0056b3; /* Couleur en survol */
+.footer a {
+    color: white;
+    text-decoration: none; /* Enlève la décoration du lien */
 }
 
-.social-btn-icon {
-    font-size: 20px; /* Taille de l'icône */
+.footer .btn-social {
+    font-size: 1.5rem; /* Taille de l'icône */
+    padding: 12px; /* Espacement à l'intérieur du bouton */
+    background-color: #555; /* Couleur de fond des boutons */
+    border-radius: 50%; /* Assure que le bouton est rond */
+    transition: background-color 0.3s ease; /* Animation douce pour le changement de couleur */
 }
 
-/* Mise en page mobile */
-@media (max-width: 767px) {
-    footer .row {
-        flex-direction: column; /* Aligne les éléments verticalement */
-        text-align: center; /* Centre le texte et les icônes */
-    }
-
-    footer .col-lg-4 {
-        margin-bottom: 15px; /* Espace entre les colonnes */
-    }
-
-    footer .col-lg-4.text-lg-start {
-        text-align: center; /* Centre les coordonnées sur mobile */
-    }
-
-    footer .col-lg-4.text-lg-start p {
-        margin-bottom: 5px; /* Espacement des paragraphes */
-    }
-
-    footer .col-lg-4.my-3.my-lg-0 {
-        display: flex;
-        justify-content: center; /* Centre les icônes sur mobile */
-        gap: 15px; /* Espacement entre les icônes */
-    }
+.footer .btn-social:hover {
+    background-color: #007bff; /* Couleur de survol */
 }
