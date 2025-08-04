@@ -11280,3 +11280,8 @@ footer .btn-social i {
     font-size: 1.5rem; /* Taille des icônes à l'intérieur du bouton */
     color: white; /* Couleur des icônes */
 }
+
+.pricing-table .pricing-item:last-child {
+    background: linear-gradient(135deg, #FF8C00, #FFA500); /* Dégradé orange */
+    color: white;
+}
