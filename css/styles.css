@@ -11143,13 +11143,12 @@ header.masthead .masthead-heading {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales sur grand écran */
     gap: 20px;
     text-align: center;
     margin-top: 20px;
 }
 
-/* ===== CARD ===== */
 .image-card {
     background-color: #f8f9fa;
     padding: 15px;
@@ -11157,16 +11156,14 @@ header.masthead .masthead-heading {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ===== IMAGE ===== */
 .image-card img {
-    width: 100%;
-    max-width: 400px;
+    width: 100%; /* Adapte la largeur à la grille */
+    max-width: 400px; /* Empêche les images de devenir trop grandes */
     height: 400px;
     object-fit: cover;
     border-radius: 8px;
 }
 
-/* ===== TEXTE ===== */
 .image-card h3 {
     margin-top: 10px;
     font-size: 18px;
@@ -11178,70 +11175,39 @@ header.masthead .masthead-heading {
     color: #555;
 }
 
-/* ===== OZONE FULL WIDTH ===== */
-.image-card.full-width {
-    grid-column: span 2;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-align: left; /* plus pro */
-}
-
-/* Image ozone */
-.image-card.full-width img {
-    width: 40%;
-    height: 300px; /* plus équilibré */
-    max-width: none;
-}
-
-/* Texte ozone */
-.image-card.full-width div {
-    width: 60%;
-}
-
-/* ===== MOBILE ===== */
+/* MEDIA QUERY POUR MOBILE */
 @media (max-width: 768px) {
     .image-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
     }
 
     .image-card img {
-        width: 100%;
-        height: auto;
-        max-height: 400px;
-    }
-
-    /* Ozone en colonne sur mobile */
-    .image-card.full-width {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .image-card.full-width img,
-    .image-card.full-width div {
-        width: 100%;
+        width: 100%; /* Les images prennent toute la largeur du conteneur */
+        height: auto; /* Hauteur ajustée pour éviter la déformation */
+        max-height: 400px; /* Garde une hauteur max */
     }
 }
 
-/* ===== TON IMAGE-CONTAINER (inchangé) ===== */
 .image-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    margin: 0; /* Enlève les marges par défaut */
 }
 
 .image-container img {
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 40%; /* Limite la largeur de l'image */
+    max-height: 40%; /* Limite la hauteur de l'image */
 }
 
+/* Media query pour les écrans plus petits (mobile) */
 @media (max-width: 768px) {
     .image-container img {
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 80%; /* Augmente la largeur sur mobile */
+        max-height: 80%; /* Augmente la hauteur sur mobile */
     }
 }
+
 form {
     max-width: 400px;
     margin: auto;
